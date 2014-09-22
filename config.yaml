@@ -1,0 +1,14 @@
+- 
+    name: '<NAME OF ENVIRONMENT 1>'
+    jenkins:
+        url: 'http://<HOSTNAME>:<PORT>'
+        oauthName: '<OAUTHNAME>'
+        oauthToken: '<OAUTHTOKEN>'
+    homepage: '<HOMEPAGE_TO_PING>'
+- 
+    name: '<NAME OF ENVIRONMENT 2>'
+    jenkins:
+        url: 'http://<HOSTNAME>:<PORT>'
+        oauthName: '<OAUTHNAME>'
+        oauthToken: '<OAUTHTOKEN>'
+    homepage: '<HOMEPAGE_TO_PING>'
