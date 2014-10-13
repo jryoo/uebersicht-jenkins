@@ -20,10 +20,13 @@ for k in doc:
         if '_anime' in job['color']:
             job['color'] = 'running'
     homepageURL = k['homepage']
-    homepageRequest = requests.get(homepageURL)
-    if homepageRequest.status_code == 200:
-        response['homepage_status'] = 'blue'
-    else:
+    try:
+        homepageRequest = requests.get(homepageURL)
+        if homepageRequest.status_code != None and homepageRequest.status_code == 200:
+            response['homepage_status'] = 'blue'
+        else:
+            response['homepage_status'] = 'red'
+    except:
         response['homepage_status'] = 'red'
     responseData.append(response)
 

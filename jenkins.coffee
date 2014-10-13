@@ -6,7 +6,7 @@ colors =
 
 command: "python ./jenkins.widget/test.py"
 
-refreshFrequency: 30000
+refreshFrequency: 3000
 
 style: """
   margin: 0 auto
@@ -63,8 +63,10 @@ style: """
     margin-top: 0px
     margin-left: 8px
     font-weight: 500
+
   .environmentName.red
     color: red
+    
   .environmentName.blue
     color: #{colors.success}
 """
